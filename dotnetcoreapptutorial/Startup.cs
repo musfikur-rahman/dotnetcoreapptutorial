@@ -16,6 +16,7 @@ namespace dotnetcoreapptutorial
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,13 +28,11 @@ namespace dotnetcoreapptutorial
             }
 
             app.UseRouting();
+            app.UseCors();
 
-            app.UseDefaultFiles();
-            app.UseFileServer();
-
-            app.Run(async context =>
+            app.UseEndpoints(async endpoints =>
             {
-                await context.Response.WriteAsync("Hosting environment: " + env.ApplicationName);
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
             });
         }
     }
