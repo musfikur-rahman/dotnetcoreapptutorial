@@ -30,7 +30,7 @@ namespace dotnetcoreapptutorial
 
             app.Run(async context =>
             {
-                await context.Response.WriteAsync("Hosting environment: " + env.EnvironmentName);
+                await context.Response.WriteAsync("Hosting environment: " + env.ApplicationName);
             });
         }
     }
