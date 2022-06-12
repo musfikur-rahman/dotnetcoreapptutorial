@@ -1,0 +1,9 @@
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\dotnetcoreapptutorial.exe
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\default.html
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\index.html
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\dotnetcoreapptutorial.dll
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\dotnetcoreapptutorial.deps.json
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\dotnetcoreapptutorial.runtimeconfig.json
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Release\netcoreapp3.1\PubTmp\Out\dotnetcoreapptutorial.pdb

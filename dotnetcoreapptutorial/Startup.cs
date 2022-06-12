@@ -28,6 +28,9 @@ namespace dotnetcoreapptutorial
 
             app.UseRouting();
 
+            app.UseDefaultFiles();
+            app.UseFileServer();
+
             app.Run(async context =>
             {
                 await context.Response.WriteAsync("Hosting environment: " + env.ApplicationName);
