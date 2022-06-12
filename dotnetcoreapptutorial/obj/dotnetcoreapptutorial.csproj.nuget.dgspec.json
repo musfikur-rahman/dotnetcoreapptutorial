@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\New folder\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj": {}
+    "C:\\Users\\Rizvi\\Documents\\GitHub\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj": {}
   },
   "projects": {
-    "G:\\New folder\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj": {
+    "C:\\Users\\Rizvi\\Documents\\GitHub\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\New folder\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj",
+        "projectUniqueName": "C:\\Users\\Rizvi\\Documents\\GitHub\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj",
         "projectName": "dotnetcoreapptutorial",
-        "projectPath": "G:\\New folder\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj",
+        "projectPath": "C:\\Users\\Rizvi\\Documents\\GitHub\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\dotnetcoreapptutorial.csproj",
         "packagesPath": "C:\\Users\\Rizvi\\.nuget\\packages\\",
-        "outputPath": "G:\\New folder\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\obj\\",
+        "outputPath": "C:\\Users\\Rizvi\\Documents\\GitHub\\dotnetcoreapptutorial\\dotnetcoreapptutorial\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
