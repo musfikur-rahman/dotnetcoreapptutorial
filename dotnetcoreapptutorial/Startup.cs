@@ -28,12 +28,9 @@ namespace dotnetcoreapptutorial
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
+            app.Run(async context =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hosting environment: " + env.EnvironmentName);
-                });
+                await context.Response.WriteAsync("Hosting environment: " + env.EnvironmentName);
             });
         }
     }
