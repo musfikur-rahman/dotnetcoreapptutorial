@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using dotnetcoreapptutorial.Models;
+using dotnetcoreapptutorial.ViewModels;
 
 namespace dotnetcoreapptutorial.Controllers
 {
@@ -19,8 +20,12 @@ namespace dotnetcoreapptutorial.Controllers
 
         public ViewResult Details()
         {
-            Employee employee = _employeeRepository.GetEmployee(1);
-            return View(employee);
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                Employee = _employeeRepository.GetEmployee(2),
+                PageTitle = "Employee Details"
+            };
+            return View(homeDetailsViewModel);
         }
     }
 }
