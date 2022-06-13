@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 using dotnetcoreapptutorial.Models;
 using dotnetcoreapptutorial.ViewModels;
 
@@ -13,9 +14,10 @@ namespace dotnetcoreapptutorial.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        public string Index()
+        public ViewResult Index()
         {
-            return _employeeRepository.GetEmployee(1).Name;
+            var model = _employeeRepository.GetAllEmployees();
+            return View(model);
         }
 
         public ViewResult Details()

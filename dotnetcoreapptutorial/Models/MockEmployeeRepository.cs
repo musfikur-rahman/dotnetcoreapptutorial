@@ -7,21 +7,26 @@ namespace dotnetcoreapptutorial.Models
 {
     public class MockEmployeeRepository : IEmployeeRepository
     {
-        private List<Employee> _employeeList;
+        private readonly List<Employee> _employeeList;
 
         public MockEmployeeRepository()
         {
             _employeeList = new List<Employee>()
             {
-                new Employee() { Id = 1, Name = "Hridoy", Department = "Welding", Email = "hridoy@email.com" },
-                new Employee() { Id = 2, Name = "Rashed", Department = "Furniture", Email = "rashed@email.com" },
-                new Employee() { Id = 3, Name = "Nirob", Department = "Sales", Email = "nirob@email.com" },
+                new Employee() { Id = 1, Name = "Horrid", Department = "Welding", Email = "horrid@email.com" },
+                new Employee() { Id = 2, Name = "Trashed", Department = "Furniture", Email = "trashed@email.com" },
+                new Employee() { Id = 3, Name = "Nirvana", Department = "Sales", Email = "nirvana@email.com" },
             };
         }
 
-        public Employee GetEmployee(int Id)
+        public IEnumerable<Employee> GetAllEmployees()
         {
-            return _employeeList.FirstOrDefault(e => e.Id == Id);
+            return _employeeList;
+        }
+
+        public Employee GetEmployee(int id)
+        {
+            return _employeeList.FirstOrDefault(e => e.Id == id);
         }
     }
 }

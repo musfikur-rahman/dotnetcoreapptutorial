@@ -124,3 +124,5 @@ C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.Views.pdb
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.csproj.CopyComplete
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
