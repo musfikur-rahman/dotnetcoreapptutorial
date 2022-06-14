@@ -5,23 +5,25 @@
 }
 
 <div class="w3-responsive">
-    <table class="w3-table w3-bordered w3-table-all w3-hoverable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Department</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var employee in Model)
-            {
+    <div class="w3-row">
+        <table class="w3-table w3-third w3-bordered w3-centered">
+            <thead>
                 <tr>
-                    <td>@employee.Id</td>
-                    <td>@employee.Name</td>
-                    <td>@employee.Department</td>
+                    <th><b>ID</b></th>
+                    <th><b>Name</b></th>
+                    <th><b>Department</b></th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model)
+                {
+                    <tr>
+                        <td>@employee.Id</td>
+                        <td>@employee.Name</td>
+                        <td>@employee.Department</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

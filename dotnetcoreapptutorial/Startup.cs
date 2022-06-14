@@ -22,6 +22,7 @@ namespace dotnetcoreapptutorial
         {
             services.AddMvc().AddXmlSerializerFormatters();
             services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            //services.AddControllers(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,12 +34,14 @@ namespace dotnetcoreapptutorial
             }
 
             app.UseRouting();
+            /*
+            app.UseMvcWithDefaultRoute();
 
-
-            app.UseEndpoints(async endpoints =>
+            app.UseEndpoints(async (endpoints) =>
             {
-                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
-            });
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id}");
+            }); 
+            */
         }
     }
 }
