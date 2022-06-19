@@ -14,16 +14,12 @@ namespace dotnetcoreapptutorial.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        [Route("")]
-        [Route("Home")]
-        [Route("Home/Index")]
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployees();
             return View(model);
         }
 
-        [Route("Home/Details/{id?}")]
         public ViewResult Details(int? id)
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
@@ -32,6 +28,11 @@ namespace dotnetcoreapptutorial.Controllers
                 PageTitle = "Employee Details"
             };
             return View(homeDetailsViewModel);
+        }
+
+        public ViewResult Create()
+        {
+            return View();
         }
     }
 }

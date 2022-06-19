@@ -13,9 +13,9 @@ namespace dotnetcoreapptutorial.Models
         {
             _employeeList = new List<Employee>()
             {
-                new Employee() { Id = 1, Name = "Horrid", Department = "Welding", Email = "horrid@email.com" },
-                new Employee() { Id = 2, Name = "Trashed", Department = "Furniture", Email = "trashed@email.com" },
-                new Employee() { Id = 3, Name = "Nirvana", Department = "Sales", Email = "nirvana@email.com" },
+                new Employee() { Id = 1, Name = "Horrid", Department = Dept.HR, Email = "horrid@email.com" },
+                new Employee() { Id = 2, Name = "Trashed", Department = Dept.IT, Email = "trashed@email.com" },
+                new Employee() { Id = 3, Name = "Nirvana", Department = Dept.Payroll, Email = "nirvana@email.com" },
             };
         }
 

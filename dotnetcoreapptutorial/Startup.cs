@@ -34,17 +34,13 @@ namespace dotnetcoreapptutorial
             }
 
             app.UseRouting();
-            app.UseStaticFiles();
-            app.UseMvc();
 
-            /*
-            app.UseMvcWithDefaultRoute();
-            
+            app.UseStaticFiles();
+
             app.UseEndpoints(async (endpoints) =>
             {
-                endpoints.MapControllerRoute("default", "{controller}/{action}/{id}");
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
-            */
         }
     }
 }

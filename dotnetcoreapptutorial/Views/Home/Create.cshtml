@@ -1,0 +1,24 @@
+﻿@model Employee
+
+@{
+    ViewBag.Title = "Create Employee";
+}
+
+
+<div class="w3-row-padding w3-center">
+    <form asp-controller="Home" asp-action="Create" method="post" class="w3-card-8 w3-col s12 m6 l3">
+        <div class="w3-group w3-padding">
+            <label asp-for="Name" class="w3-label"></label>
+            <input asp-for="Name" class="w3-input w3-border w3-border-amber" type="text" />
+        </div>
+        <div class="w3-group w3-padding">
+            <label asp-for="Email" class="w3-label"></label>
+            <input asp-for="Email" class="w3-input w3-border w3-border-amber" type="text" />
+        </div>
+        <div class="w3-group w3-padding">
+            <label asp-for="Department" class="w3-label"></label>
+            <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()" class="w3-input w3-border w3-border-amber"></select>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+</div>

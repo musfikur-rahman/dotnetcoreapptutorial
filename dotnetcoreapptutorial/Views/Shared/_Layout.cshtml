@@ -2,18 +2,70 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <environment include="Development">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+              integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+              asp-fallback-href="~/lib/meyer-reset/reset.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true" />
+    </environment>
+    <environment include="Staging,Production">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+              integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+              asp-fallback-href="~/lib/meyer-reset/reset.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true" />
+    </environment>
+    <environment include="Development">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css"
+              integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+              asp-fallback-href="~/lib/w3-css/w3.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true" />
+    </environment>
+    <environment include="Staging,Production">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css"
+              integrity="sha512-Z6UIAdEZ7JNzeX5M/c5QZj+oqbldGD+E8xJEoOwAx5e0phH7kdjsWULGeK5l2UjehKtChHDaUY2rQAF/NEiI9w=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+              asp-fallback-href="~/lib/w3-css/w3.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true" />
+    </environment>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="w3-container">
+        <div class="w3-bar w3-border w3-amber">
+            <a asp-controller="Home" asp-action="Index" class="w3-bar-item w3-button w3-padding-16">List</a>
+            <a asp-controller="Home" asp-action="Create" class="w3-bar-item w3-button w3-padding-16">Create</a>
+        </div>
+        <div>
+            @RenderBody()
+        </div>
     </div>
-    @if (IsSectionDefined("Scripts"))
-    {
-        @RenderSection("Scripts", required: true)
-    }
+@if (IsSectionDefined("Scripts"))
+{
+    @RenderSection("Scripts", required: true)
+}
 </body>
 </html>

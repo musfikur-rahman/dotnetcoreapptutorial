@@ -4,26 +4,23 @@
     ViewBag.Title = "Employee List";
 }
 
-<div class="w3-responsive">
-    <div class="w3-row">
-        <table class="w3-table w3-third w3-bordered w3-centered">
-            <thead>
-                <tr>
-                    <th><b>ID</b></th>
-                    <th><b>Name</b></th>
-                    <th><b>Department</b></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var employee in Model)
-                {
-                    <tr>
-                        <td>@employee.Id</td>
-                        <td>@employee.Name</td>
-                        <td>@employee.Department</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+<div class="w3-row w3-padding-16">
+    @foreach (var employee in Model)
+    {
+        <div class="w3-col s12 m6 l3">
+            <div class="w3-container">
+                <div class="w3-card-4 w3-border-amber w3-center">
+                    <header class="w3-padding-16">
+                        <h3>@employee.Name</h3>
+                    </header>
+                    <img src="~/images/noimage.jpg" style="width: 80%" class="w3-padding-16" asp-append-version="true" />
+                    <footer class="w3-padding-16">
+                        <a asp-controller="Home" asp-action="Details" asp-route-id="@employee.Id" class="w3-button w3-round w3-white w3-border w3-border-blue">View</a>
+                        <a href="#" class="w3-button w3-round w3-white w3-border w3-border-blue">Edit</a>
+                        <a href="#" class="w3-button w3-round w3-white w3-border w3-border-red">Delete</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    }
 </div>
