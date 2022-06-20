@@ -7,6 +7,8 @@ namespace dotnetcoreapptutorial.Controllers
 {
     public class HomeController : Controller
     {
+        // 44
+
         private readonly IEmployeeRepository _employeeRepository;
 
         public HomeController(IEmployeeRepository employeeRepository)
@@ -30,8 +32,21 @@ namespace dotnetcoreapptutorial.Controllers
             return View(homeDetailsViewModel);
         }
 
+        [HttpGet]
         public ViewResult Create()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("Details", new { id = newEmployee.Id });
+            }
+
             return View();
         }
     }
