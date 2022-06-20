@@ -1,0 +1,35 @@
+﻿@model EmployeeCreateViewModel
+
+@{
+    ViewBag.Title = "Create Employee";
+}
+
+<form enctype="multipart/form-data" asp-controller="Home" asp-action="Create" method="post" class="w3-card-8">
+    <div class="w3-group w3-padding w3-col s12 m6 l3">
+        <label asp-for="Name" class="w3-label"></label>
+        <input asp-for="Name" class="w3-input w3-border" type="text" />
+        <span asp-validation-for="Name" class="w3-text-red"></span>
+    </div>
+    <div class="w3-group w3-padding w3-col s12 m6 l3">
+        <label asp-for="Email" class="w3-label"></label>
+        <input asp-for="Email" class="w3-input w3-border" type="text" />
+        <span asp-validation-for="Email" class="w3-text-red"></span>
+    </div>
+    <div class="w3-group w3-padding w3-col s12 m6 l3">
+        <label asp-for="Department" class="w3-label"></label>
+        <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()" class="w3-select w3-border">
+            <option value="">Please Select</option>
+        </select>
+        <span asp-validation-for="Department" class="w3-text-red"></span>
+    </div>
+    <div class="w3-group w3-padding w3-col s12 m6 l3">
+        <label asp-for="Photo" class="w3-label"></label>
+        <input asp-for="Photo" class="w3-input w3-border" type="file" />
+    </div>
+    <div class="w3-group w3-padding w3-col s12 m12 l12">
+        <div asp-validation-summary="All" class="w3-text-red"></div>
+    </div>
+    <div class="w3-group w3-padding w3-col s12 m12 l12">
+        <button type="submit" class="w3-button w3-green w3-hover-blue-gray">Create</button>
+    </div>
+</form>
