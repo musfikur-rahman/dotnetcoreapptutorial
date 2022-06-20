@@ -34,8 +34,6 @@ C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.csproj.CoreCompileInputs.cache
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\staticwebassets\dotnetcoreapptutorial.StaticWebAssets.Manifest.cache
-C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\staticwebassets\dotnetcoreapptutorial.StaticWebAssets.xml
-C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\scopedcss\bundle\dotnetcoreapptutorial.styles.css
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.RazorTargetAssemblyInfo.cache
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.dll
 C:\Users\Rizvi\Documents\GitHub\dotnetcoreapptutorial\dotnetcoreapptutorial\obj\Debug\netcoreapp3.1\dotnetcoreapptutorial.pdb
