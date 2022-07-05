@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeManagement.Models
 {
     public class Employee
     {
+        [Required]
         public int Id { get; set; }
         [Required]
         [MaxLength(50, ErrorMessage = "Name can't be more than 50 characters")]
