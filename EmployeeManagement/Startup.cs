@@ -21,8 +21,7 @@ namespace EmployeeManagement
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<AppDbContext>(
-                options => options.UseSqlServer(_config.GetConnectionString("EmployeeDbConnection")));
+            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDbConnection")));
             services.AddMvc().AddXmlSerializerFormatters();
             services.AddTransient<IEmployeeRepository, MockEmployeeRepository>();
             services.AddControllers(options => options.EnableEndpointRouting = false);
